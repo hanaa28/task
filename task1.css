@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    height: 100vh;
+    
+}
+*{
+    box-sizing: border-box;
+
+}
+.cont{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background-color: aqua;
+    color: #00303F;
+    height: 10%;
+    width: 100%;
+    }
+header i{
+   font-size: 0;
+}
+h2{
+    margin: 0;
+
+}
+li{
+list-style: none;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+}
+a:hover{
+    color: #00303F;
+}
+ul{
+    width: 100%;
+display: grid;
+grid-template-columns:1fr 1fr 2fr 1fr 1fr;
+margin: 0;
+padding: 0;
+align-items: center;
+text-align: center;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 95%;
+    background-image: url('./Images/black.jpg');
+    background-size: cover;
+
+
+}
+section h2{
+    margin: 0;
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+}
+button{
+    margin-top: 20px;
+    background: linear-gradient(to left, blue,gray);
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+button:hover{
+    animation:wh 2s ;
+    background: linear-gradient(to right, blue,gray);
+}
+@keyframes wh {
+    0%{
+        width: 200px;
+    height: 50px;
+    }
+    100%{
+        width: 250px;
+        height: 70px;
+       
+    }
+    
+}
+@media (max-width:600px) {
+    header{
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+header i{
+position: absolute;
+right: 5px;
+font-size: 20px;
+}
+ul{
+        display: none;
+    }
+   
+h2{
+   display: none;
+ }
+ #section {
+    transition: transform 0.3s;
+}
+
+.fa-bars:hover ~ #section {
+    transform: translateY(15vh);
+}
+  .section-hovered {
+            transform: translateY(15vh);
+        }
+
+}

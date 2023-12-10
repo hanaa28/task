@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./task1.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+</head>
+<body>
+    <div class="cont">
+        <header>
+       
+            <i class="fa-solid fa-bars icon" onclick="move()" ></i>
+    
+            <ul id="f">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                   <a href="#"> Contect Us</a>
+                </li>
+           <h2>
+                ITI Admassion System
+            </h2>
+                <li>
+                    <a href="#"> About Us</a>
+                </li>
+                <li>
+                  <a href="#">Products</a>
+                </li>
+            </ul>
+           </header>
+
+   <section id="section">
+    <h2>Click To Register</h2>
+    <button>Register</button>
+   </section>
+</div>
+<script>
+
+    function move() {
+        let section = document.getElementById('section');
+        let ul = document.getElementById('f');
+
+        if (section.style.transform === 'translateY(15vh)') {
+            section.style.transform = 'translateY(0)';
+            ul.style.display = "none";
+           
+        } else {
+            section.style.transform = 'translateY(15vh)';
+            ul.style.display = "flex";
+            ul.style.flexDirection = "column";
+            ul.style.justifyContent = "center";
+            ul.style.zIndex='2';
+            ul.style.background="gray";
+            ul.style.color="white";
+            ul.style.width="100%";
+            ul.style.position="absolute";
+            ul.style.top="100%";
+            ul.style.height="15vh";
+        }
+    
+        }
+</script>
+</body>
+</html>
